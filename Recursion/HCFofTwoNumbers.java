@@ -13,7 +13,7 @@ public class HCFofTwoNumbers {
 
     static int hcfNumber(int num1, int num2, int res, int i) {
 
-        if (num1 == i || num2 == i) {
+        if (Math.max(num1, num2) == i) {
             return res;
         }
         if (num1 % i == 0 && num2 % i == 0) {
